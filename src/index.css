@@ -1,0 +1,112 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 35% 98%;
+    --foreground: 160 50% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 50% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 50% 7%;
+
+    --primary: 160 57% 28%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 157 64% 45%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 160 30% 92%;
+    --muted-foreground: 160 30% 40%;
+
+    --accent: 54 78% 57%;
+    --accent-foreground: 160 50% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 20% 85%;
+    --input: 160 20% 85%;
+    --ring: 160 57% 28%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 160 50% 7%;
+    --foreground: 160 30% 92%;
+
+    --card: 160 50% 7%;
+    --card-foreground: 160 30% 92%;
+
+    --popover: 160 50% 7%;
+    --popover-foreground: 160 30% 92%;
+
+    --primary: 160 57% 28%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 157 64% 45%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 160 30% 15%;
+    --muted-foreground: 160 30% 70%;
+
+    --accent: 54 78% 57%;
+    --accent-foreground: 160 50% 7%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 30% 15%;
+    --input: 160 30% 15%;
+    --ring: 160 57% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-amana-dark;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
